@@ -32,14 +32,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
                this is that the arch part is not really needed since it's the only
                config in embedded-common.
  * [`changed`] Structure of embedded-common. File names should be more logical
-               and the spliting of the different parts of the code as well.
+               and the splitting of the different parts of the code as well.
                Embedded-common now splits the code into three `.[ch]` file pairs
                and a configuration `.h` file.
                First there are the three files in `common/`. `sensirion_config.h`
                is similar to `sensirion_arch_config.h` from before. It contains
                configurations for the code to be edited by the user.
                Then there is the `sensirion_common.[ch]` pair which contains helper
-               functions which are not protocol spesific, at the moment it's mostly
+               functions which are not protocol specific, at the moment it's mostly
                type conversions.
                Secondly there are the two other file pairs in `i2c/`. The pair
                `sensirion_i2c.[ch]` contains all functions for the i2c
